@@ -1,0 +1,37 @@
+{
+  "name": "ollama-security",
+  "version": "0.1.0",
+  "description": "Audit any Ollama server for the misconfiguration that leaks compute and models — a public API bound with no auth — and PROVE it live with an anonymous probe of /api/tags, /api/ps, /api/version and CORS reflection. Zero deps, no keys.",
+  "type": "module",
+  "bin": {
+    "ollama-security": "./scripts/cli.js"
+  },
+  "scripts": {
+    "audit": "node scripts/audit.js",
+    "test": "node test/audit.test.js"
+  },
+  "keywords": [
+    "ollama",
+    "security",
+    "security-audit",
+    "llm",
+    "local-llm",
+    "local-ai",
+    "auditor",
+    "devsecops",
+    "ai-agents",
+    "cors",
+    "exposure",
+    "llm-security"
+  ],
+  "author": "Renzo Madueno (@Perufitlife)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Perufitlife/ollama-security"
+  },
+  "homepage": "https://github.com/Perufitlife/ollama-security",
+  "engines": {
+    "node": ">=18"
+  }
+}
